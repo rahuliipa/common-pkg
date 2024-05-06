@@ -1,10 +1,11 @@
 {
   "name": "@rahuliipa/common-pkg",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@rahuliipa"
+    "registry": "https://npm.pkg.github.com/@rahuliipa",
+    "access": "public"
   },
   "repository": {
     "type": "git",
