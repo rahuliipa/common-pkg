@@ -1,19 +1,23 @@
 {
   "name": "@rahuliipa/common-pkg",
-  "version": "1.0.3",
-  "description": "",
-  "main": "index.js",
+  "version": "1.2.1",
+  "description": "Common Insurun components and libraries",
+  "main": "./index.js",
+  "types": "./index.d.ts",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@rahuliipa",
     "access": "public"
-  },
-  "type": "module",
+  },  
   "repository": {
     "type": "git",
     "url": "https://github.com/rahuliipa/common-pkg"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run clean && tsc",
+    "clean": "rimraf build/*",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "prettier --config prettier.config.js --write 'src/**/*' prettier.config.js publish.js jest.config.js"
   },
   "keywords": [],
   "author": "",
